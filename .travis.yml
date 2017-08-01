@@ -1,0 +1,20 @@
+language: ruby
+rvm:
+- 2.3.3
+
+install:
+- travis_retry bundle install
+
+script: bundle exec rspec
+
+notifications:
+  email: false
+
+deploy:
+  provider: rubygems
+  api_key:
+    secure: m8BU/uj0polF8L9pPM5zOr5jteqOyQ7wY1COcuRBOlGDG20cLpFzhQnghtexRNYTSLcLiucpeP1PcvUWk77ACyjeVXtbn/0M2PdHHCVOfuYVTy9yk7DIWWUUI4CzzpVDds0Vlx5hnIdaKX0jR0JPctAI2TCvFYG9Dl/UsVPHBCt0KMYh70GXOHxqchigYJz7OM1bASD018/FiOwxm0wDiMDkDSMEz4YCMb6NMlZkNPRu1kwCc6kpNbeNlEoW42jlsrUTLP6hSTOKmmXpbZh087vh5hu5pjrjRtpwRZwloi0AZSdB2aJA3XXbBQrYqtfeX9icpdVFTYkGZKwHxlACj6m9azeAzupEv7kfnXxsK6qGhm1XF/Wk/2WLmbyyZ3W9Qd01D6NNCzVuYIicph6sQO059+NKCQqR595gzfOKpr+QjUemstCQNMZ9/NC73RmDLdN/ooUiTPjDc04050RKmfzPIdzwBsb1rTSPnh40sAapAQwWPveN8gIFzcF4D25AN374NGbzertyqecV/FqSX7SVm8AmZwIBV72ivm/B9SHnH+VjdJfpgckYnTkfdnC3nL2i5tjKf736hpYKbexk3vvvq/0i0Tvs2r0rXKbEIZuSWiklT1C+XKZT/iBPZAMiTnM5BqoAu3I/CyG9vgfCZO6Ds0tJ92dlAGg8k7lAhHw=
+  gem: omniauth-jwt-email
+  on:
+    tags: true
+    repo: datacite/omniauth-jwt-email
