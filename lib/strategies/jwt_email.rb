@@ -2,12 +2,12 @@ require 'jwt'
 
 module OmniAuth
   module Strategies
-    class JwtOtp
+    class JwtEmail
       class ClaimInvalid < StandardError; end
 
       include OmniAuth::Strategy
 
-      option :name, "jwt-otp"
+      option :name, "jwt-email"
       option :public_key, nil
       option :uid_claim, 'email'
       option :required_claims, %w(name email)

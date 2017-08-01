@@ -1,10 +1,10 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/mfenner/Documents/git/omniauth-jwt-otp/lib/omniauth-jwt-otp.rb": [
+      "/Users/mfenner/Documents/git/omniauth-jwt-email/lib/omniauth-jwt-email.rb": [
         1
       ],
-      "/Users/mfenner/Documents/git/omniauth-jwt-otp/lib/strategies/jwt_otp.rb": [
+      "/Users/mfenner/Documents/git/omniauth-jwt-email/lib/strategies/jwt_email.rb": [
         1,
         null,
         1,
@@ -70,6 +70,6 @@
         null
       ]
     },
-    "timestamp": 1500286357
+    "timestamp": 1501561378
   }
 }

@@ -1,6 +1,6 @@
-# OmniAuth JWT-OTP
+# OmniAuth JWT-Email
 
-[![Build Status](https://travis-ci.org/datacite/omniauth-jwt-otp.svg?branch=master)](https://travis-ci.org/datacite/omniauth-jwt-otp)
+[![Build Status](https://travis-ci.org/datacite/omniauth-jwt-email.svg?branch=master)](https://travis-ci.org/datacite/omniauth-jwt-email)
 
 Strategy for the [OmniAuth Ruby authentication framework](http://www.omniauth.org). Uses short-lived JWTs for one-time authentication, e.g. for passwordless authentication via email
 
@@ -13,4 +13,4 @@ Strategy for the [OmniAuth Ruby authentication framework](http://www.omniauth.or
 * Commit, push and make a pull request. Bonus points for topical branches.
 
 ## License
-**bolognese** is released under the [MIT License](https://github.com/datacite/omniauth-jwt-otp/blob/master/LICENSE.md).
+**omniauth-jwt-email** is released under the [MIT License](https://github.com/datacite/omniauth-jwt-email/blob/master/LICENSE.md).

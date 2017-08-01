@@ -8,7 +8,7 @@ require 'rspec'
 require 'rack/test'
 require 'webmock/rspec'
 require 'omniauth'
-require 'omniauth-jwt-otp'
+require 'omniauth-jwt-email'
 
 def fixture_path
   File.expand_path("../fixtures", __FILE__) + '/'
@@ -21,4 +21,5 @@ RSpec.configure do |config|
   config.expect_with :rspec do |c|
     c.syntax = :expect
   end
+  config.order = 'random'
 end
