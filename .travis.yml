@@ -9,7 +9,9 @@ addons:
 install:
 - travis_retry bundle install
 
-script: bundle exec rspec
+script:
+- bundle exec rspec  
+- bundle exec codeclimate-test-reporter
 
 notifications:
   email: false
